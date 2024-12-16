@@ -4,21 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/site.webmanifest">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="./static/css/style.css" media="screen" charset="utf-8">
+  <title>Todo App</title>
 </head>
 
 <body>
-  <section class="about"><img src="./eisenhower-matrix.jpg">
+  <section class="about"><img src="./assets/img/eisenhower-matrix.jpg">
     <a class="about-more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?;</a>
   </section>
   <section class="form-tasks">
     <div class="add-task">
       <h3>Add Item</h3>
       <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+        <input id="new-task" type="text">
+        <button class="btn-add">Add</button>
       </div>
     </div>
     <div class="incomplete-tasks">
@@ -27,16 +31,16 @@
         <li>
           <input type="checkbox">
           <label class="task-name">Pay Bills</label>
-          <input type="text" class="task-name">
+          <input type="text">
           <button class="btn-edit">Edit</button>
-          <button class="btn-delete"><img src="./remove.svg"></button>
+          <button class="btn-delete"><img src="./assets/img/remove.svg"></button>
         </li>
         <li class="editMode">
           <input type="checkbox">
           <label class="task-name">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task-name">
           <button class="btn-edit">Save</button>
-          <button class="btn-delete"><img src="./remove.svg"></button>
+          <button class="btn-delete"><img src="./assets/img/remove.svg"></button>
         </li>
       </ul>
     </div>
@@ -48,12 +52,12 @@
           <label class="task-name">See the Doctor</label>
           <input type="text" class="task-name">
           <button class="btn-edit">Edit</button>
-          <button class="btn-delete"><img src="./remove.svg"></button>
+          <button class="btn-delete"><img src="./assets/img/remove.svg"></button>
         </li>
       </ul>
     </div>
   </section>
-  <script src="app.js"></script>
+  <script src="./static/js/app.js"></script>
 </body>
 
 </html>
