@@ -1,0 +1,147 @@
+body {
+  background-color: #f8f8f8;
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.btn-delete,
+.btn-edit,
+#completed-tasks-list .task-name,
+input[type="text"] {
+    color: #888;
+}
+
+body,
+input[type="text"]:focus {
+  color: #333;
+}
+
+.about {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about-more {
+  font-family: fantasy, cursive;
+  font-size: 18px;
+}
+
+@media (max-width:768px) {
+  .about {
+    text-align: center;
+  }
+}
+
+.form-tasks {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task-row-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+#completed-tasks-list,
+#incomplete-tasks-list {
+  margin: 0;
+  padding: 0px;
+}
+
+
+.btn-delete,
+.btn-edit,
+.btn-add {
+  background: none;
+  border: 0px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.btn-delete:hover,
+.btn-edit:hover,
+.btn-add:hover {
+  color: #3a3a3a;
+}
+
+h3 {
+  margin: 0;
+  padding: 30px 0 10px;
+  font-weight: 700;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  padding: 0 9px;
+  height: 21px;
+  font-size: 18px;
+  line-height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+
+#new-task {
+  width: 318px;
+  flex-grow: 1;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li>input[type="checkbox"] {
+  margin: 0 10px;
+}
+
+.task-name {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+li>input[type="text"] {
+  width: 226px
+}
+
+.btn-delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.btn-delete img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+#completed-tasks-list .task-name {
+  text-decoration: line-through;
+}
+
+/* Edit Task */
+ul li:not(.editMode) input[type=text] {
+  display: none
+}
+
+.editMode label {
+  display: none;
+}
