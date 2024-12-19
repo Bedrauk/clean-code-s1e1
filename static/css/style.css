@@ -138,7 +138,7 @@ li>input[type="text"] {
 }
 
 /* Edit Task */
-ul li:not(.editMode) input[type=text] {
+li:not(.editMode) input[type=text] {
   display: none
 }
 
